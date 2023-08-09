@@ -10,8 +10,11 @@ public class PropertyDTO {
 	private Double price;
 	private String address;
 	
-	public String getId() {
-		return title;
+	public Long getId() {
+		return this.id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;

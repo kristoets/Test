@@ -7,8 +7,9 @@ import lombok.Setter;
 
 public class UserDTO {
 	
+	private Long id;
+	
 	private String ownerName;
-	@Column( nullable=false)
 	private String email;
 	private String phone;
 	private String password;
@@ -18,6 +19,13 @@ public class UserDTO {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getOwnerName() {
 		return ownerName;
 	}
