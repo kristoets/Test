@@ -6,9 +6,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="PROPERTY_TABLE")
+@NoArgsConstructor
 public class PropertyEntity {
 	
 	@Id
@@ -22,6 +24,7 @@ public class PropertyEntity {
 	private String ownerEmail;
 	private Double price;
 	private String address;
+	
 	
 	public String getTitle() {
 		return title;
