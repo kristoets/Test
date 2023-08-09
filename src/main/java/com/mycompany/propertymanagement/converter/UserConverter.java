@@ -12,7 +12,6 @@ public class UserConverter {
 	
 	public UserEntity convertDTOtoEntity(UserDTO userDTO) {
 		UserEntity ue = new UserEntity();
-		ue.setId(userDTO.getId());
 		ue.setOwnerName(userDTO.getOwnerName());
 		ue.setEmail(userDTO.getEmail());
 		ue.setPhone(userDTO.getPhone());
@@ -27,7 +26,6 @@ public class UserConverter {
 		ud.setOwnerName(userEntity.getOwnerName());
 		ud.setEmail(userEntity.getEmail());
 		ud.setPhone(userEntity.getPhone());
-		ud.setPassword(userEntity.getPassword());
 		return ud;
 	}
 	

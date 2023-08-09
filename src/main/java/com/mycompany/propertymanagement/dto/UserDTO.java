@@ -1,5 +1,10 @@
 package com.mycompany.propertymanagement.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
@@ -44,9 +49,13 @@ public class UserDTO {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	
+	@JsonIgnore
 	public String getPassword() {
 		return password;
 	}
+	
+	@JsonProperty
 	public void setPassword(String password) {
 		this.password = password;
 	}
