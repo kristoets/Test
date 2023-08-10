@@ -8,6 +8,6 @@ import com.mycompany.propertymanagement.dto.UserDTO;
 public interface UserService {
 	
 	UserDTO register(UserDTO userDTO);
-	UserDTO logij(String email, String password);
+	UserDTO login(String email, String password);
 
 }
